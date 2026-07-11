@@ -159,8 +159,8 @@ The recipe:
 **Why kallisto and not STAR/HISAT2?** Because rice is already well-annotated (I don't need to discover new genes), I only need gene-level counts, and pseudo-alignment gives me that in a fraction of the time and memory. It's the right tool for *this* job.
 
 **You end up with two tables**, each **genes × 18 samples**:
-- [`gene_counts.csv`](Results/2_Kallisto%20output/gene_counts.csv/) : raw counts → the food for DESeq2.
-- [`gene_counts_abundance.csv`] (Results/2_Kallisto%20output/gene_counts_abundance.csv/) — TPM (length- and depth-normalised) → used to decide which genes are "expressed enough." and helpful in filtering the low expressed genes
+- [`gene_counts.csv`](Results/2_Kallisto_output/) : raw counts → the food for DESeq2.
+- [`gene_counts_abundance.csv`](Results/2_Kallisto_output/) — TPM (length- and depth-normalised) → used to decide which genes are "expressed enough." and helpful in filtering the low expressed genes
 
 ---
 
